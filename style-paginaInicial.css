@@ -39,10 +39,17 @@ nav ul li a {
     padding: 5px 10px;
 }
 
-.ligas img{
-    width: 300px;
+.ligas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px; /* espaçamento entre as imagens */
+}
+
+.ligas img {
+    width: 100%;
     height: auto;
 }
+
 footer {
     margin-top: 30%;
     background: #333;
